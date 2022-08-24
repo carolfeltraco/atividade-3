@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+section {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+  font-family:'Inter', sans-serif;
+}
+
+.infos {
+  width: 400px;
+}
+
+.Pmaior {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 50px;
+  width: 300px;
+}
+
+.Pmenor {
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 350px;
+  margin-left: 30px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.num {
+  display: flex;
+  justify-content: space-evenly;
+}
+.num p{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img img {
+  width: 380px;
+  height: 330px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 375px){
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div .num{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .infos .Pmaior {
+    text-align: center;
+    margin: 50px 0 0 0;
+    
+  }
+  .infos .Pmenor {
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+
+  .img img {
+    width: 100%;
+  }
+}
+  @media (max-width: 425px){
+    section {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+  }
+  
+
